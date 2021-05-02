@@ -111,7 +111,6 @@ input[type=submit] {
     border-radius: 0.5em;
     cursor: pointer;
     border: 0.075em solid #151515;
-    text-shadow: 0 0 1em #000;
 }
 
 input[type="checkbox"], input[type="radio"] {
