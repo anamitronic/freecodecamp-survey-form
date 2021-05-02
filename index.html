@@ -10,6 +10,10 @@
 
         <link rel = "stylesheet" href = "styles.css">
 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;
+    1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
+
     </head>
 
     <body>
@@ -20,16 +24,16 @@
 
         <form id = "survey-form">
 
-            <label for="name" id="name-label"> Name </label><br>
-            <input type="field" id="name" name="name" placeholder ="Enter your Name" required><br>
+            <label for="name" id="name-label" class="labels"> Name </label><br>
+            <input type="field" id="name" name="name" placeholder ="Enter your Name" required><br><br>
             
-            <label for="email" id="email-label"> Email </label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+            <label for="email" id="email-label" class="labels"> Email </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
 
             <label for="age" id="number-label"> Age <span id="opt"> (optional) </span> </label><br>
-            <input type="number" id="number" name="age" placeholder="Age" min="7" max="69"><br>
+            <input type="number" id="number" name="age" placeholder="Age" min="7" max="69"><br><br>
 
-            <label for="dropdown"> Choose your arrival method </label><br>
+            <label for="dropdown" class="labels"> Choose your arrival method </label><br>
             <select name="arrival" id="dropdown"><br>
                 <option value="" selected disabled> Choose a transportation system: </option>
                 <option value="heli"> Helicopter </option>
@@ -37,17 +41,17 @@
                 <option value="ship"> Cruise ship </option>
                 <option value="boat"> Boat </option>
                 <option value="raft"> Raft </option>
-            </select><br>
+            </select><br><br>
             
-            <label for="radio"> Do you want to buy the Death-by-Dino experience pack? </label><br>
+            <label for="radio" class="labels"> Do you want to buy the Death-by-Dino experience pack? </label><br>
                 <input type="radio" id="yes" name="dinodeath" value="yes">
                 <label for="yes">Yes</label><br>
                 <input type="radio" id="no" name="dinodeath" value="no">
                 <label for="no">No</label><br>
                 <input type="radio" id="maybe" name="dinodeath" value="maybe">
-                <label for="maybe">Maybe</label><br>
+                <label for="maybe">Maybe</label><br><br>
 
-            <label for="rides"> What rides do you want to experience? </label><br>
+            <label for="rides" class="labels"> What rides do you want to experience? </label><br>
                 <input type="checkbox" id="ride1" name="ride1" value="vent">
                 <label for="ride1"> Viewing Vent </label><br>
                 <input type="checkbox" id="ride2" name="ride2" value="plat">
@@ -57,10 +61,10 @@
                 <input type="checkbox" id="ride4" name="ride4" value="safari">
                 <label for="ride4"> Balloon Adventure </label><br>
                 <input type="checkbox" id="ride5" name="ride5" value="gyro">
-                <label for="ride5"> Gyrosphere </label><br>
+                <label for="ride5"> Gyrosphere </label><br><br>
 
-            <label for="instr"> Special Instructions </label><br>
-            <textarea id="instr" name="instructions"> If you have any special instructions, enter them here </textarea><br>
+            <label for="instr" class="labels"> Special Instructions </label><br>
+            <textarea id="instr" name="instructions"> If you have any special instructions, enter them here </textarea><br><br>
 
             <input type="submit" id="submit" value="Book Vacation">
 
