@@ -27,25 +27,28 @@
         <form id = "survey-form">
 
             <label for="name" id="name-label" class="labels"> Name </label><br>
-            <input type="field" id="name" name="name" placeholder ="Enter your Name" required><br><br>
+            <input type="field" id="name" name="name" placeholder ="What should be the name on your tombstone" required><br><br>
             
             <label for="email" id="email-label" class="labels"> Email </label><br>
-            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+            <input type="email" id="email" name="email" placeholder="Where should we send your death certificate" required><br><br>
 
             <label for="num" id="number-label" class="labels"> Number of Visitors </label><br>
-            <input type="number" id="number" name="num" placeholder="Enter the number of visitors" min="1" max="10"><br><br>
+            <input type="number" id="number" name="num" placeholder="Enter the estimated death toll" min="1" max="10"><br><br>
 
             <label for="date" id="date-label" class="labels"> Date </label><br>
             <input type="date" id="date" name="age" placeholder="DD/MM/YYYY"> <br><br>
 
             <label for="dropdown" class="labels"> Choose your arrival method </label><br>
             <select name="arrival" id="dropdown"><br>
-                <option value="" selected disabled> Choose a transportation system: </option>
+                <option value="" selected disabled> Choose a drop-off system: </option>
                 <option value="heli"> Helicopter </option>
                 <option value="drop"> Airdrop </option>
+                <option value="battlebus"> Battlebus </option>
                 <option value="ship"> Cruise ship </option>
                 <option value="boat"> Boat </option>
                 <option value="raft"> Raft </option>
+                <option value="float"> Pool Float </option>
+                <option value="plank"> Plank from Titanic </option>
             </select><br><br>
             
             <label for="radio" class="labels"> Do you want to buy the Death-by-Dino experience pack? </label><br>
@@ -54,7 +57,7 @@
                 <input type="radio" id="no" name="dinodeath" value="no">
                 <label for="no" class="butt"> No </label><br>
                 <input type="radio" id="maybe" name="dinodeath" value="maybe">
-                <label for="maybe" class="butt"> I'll let the dinosaur gods decide </label><br><br>
+                <label for="maybe" class="butt"> I'll let the dinosaurs decide </label><br><br>
 
             <label for="rides" class="labels"> What rides do you want to enjoy? </label><br>
                 <input type="checkbox" id="ride1" name="ride1" value="vent">
@@ -69,7 +72,11 @@
                 <label for="ride5" class="butt"> Gyrosphere </label><br><br>
 
             <label for="instr" class="labels"> Special Instructions </label><br>
-            <textarea id="instr" name="instructions"> If you have any special instructions, enter them here </textarea><br><br>
+            <textarea id="instr" name="instructions"> If you have any dinosaurs you want to be let loose for your visit, mention them here </textarea><br><br>
+            
+            <input type="checkbox" id="waiver" name="waiver" value="waived" required>
+            <label for="waiver" class="disclaimer"> I hereby declare that I will not sue International Genetics Incorporated (The InGen Corporation),
+                for any loss of property, limbs, or lives whatsoever. </label><br><br>
 
             <input type="submit" id="submit" value="BOOK VACATION">
 

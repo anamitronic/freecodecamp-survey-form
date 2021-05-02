@@ -46,13 +46,12 @@ p {
 }
 
 h1, p {
-    text-shadow: 0px 0px 1em #000;
+    text-shadow: 0px 0px 15em #000;
 }
 
 form {
     background-color: rgb(200, 200, 200);
     border-radius: 1em;
-    border: 0.25em solid #111;
     margin: 2em auto;
     text-align: left;
     max-width: 800px;
@@ -62,6 +61,7 @@ form {
     font-weight: 600;
     font-size: 1em;
     line-height: 1.5em;
+    box-shadow: 0px 0px 15em #000;
 }
 
 .labels {
@@ -77,19 +77,19 @@ input[type=field], input[type=email], input[type=number], input[type=date], sele
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 0.05em solid #111;
+    border: 0.15em solid #111;
     border-radius: 0.75em;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
-    color: #000;
+    color: #666;
 }
 
 ::placeholder {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     font-weight: 400;
-    color: rgb(0, 0, 0, 1);
+    color: #000;
 }
 
 textarea {
@@ -105,12 +105,12 @@ input[type=submit] {
     color: white;
     font-family: 'jp';
     font-size: 2.5em;
-    font-weight: 400;
+    font-weight: 800;
     padding: 14px 20px;
     margin: 8px 0;
     border-radius: 0.5em;
     cursor: pointer;
-    border: 0.075em solid #111;
+    border: 0.075em solid #151515;
     text-shadow: 0 0 1em #000;
 }
 
@@ -121,4 +121,8 @@ input[type="checkbox"], input[type="radio"] {
 
 .butt {
     font-weight: 400;
+}
+
+.disclaimer {
+    font-weight: 600;
 }
