@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = "utf-8">
+        
+        <title> Survey Form </title>
+
+        <link rel = "stylesheet" href = "styles.css">
+
+    </head>
+
+    <body>
+
+        <h1 id = "title"> Experience Isla Nublar </h1>
+
+        <p id = "description"> book your vacation right now </p>
+
+        <form id = "survey-form">
+
+            <label for="name" id="name-label"> Name </label><br>
+            <input type="field" id="name" name="name" placeholder ="Enter your Name" required><br>
+            
+            <label for="email" id="email-label"> Email </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br>
+
+            <label for="age" id="number-label"> Age <span id="opt"> (optional) </span> </label><br>
+            <input type="number" id="number" name="age" placeholder="Age" min="7" max="69"><br>
+
+            <label for="dropdown"> Choose your arrival method </label><br>
+            <select name="arrival" id="dropdown"><br>
+                <option value="" selected disabled> Choose a transportation system: </option>
+                <option value="heli"> Helicopter </option>
+                <option value="drop"> Airdrop </option>
+                <option value="ship"> Cruise ship </option>
+                <option value="boat"> Boat </option>
+                <option value="raft"> Raft </option>
+            </select><br>
+            
+            <label for="radio"> Do you want to buy the Death-by-Dino experience pack? </label><br>
+                <input type="radio" id="yes" name="dinodeath" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="dinodeath" value="no">
+                <label for="no">No</label><br>
+                <input type="radio" id="maybe" name="dinodeath" value="maybe">
+                <label for="maybe">Maybe</label><br>
+
+            <label for="rides"> What rides do you want to experience? </label><br>
+                <input type="checkbox" id="ride1" name="ride1" value="vent">
+                <label for="ride1"> Viewing Vent </label><br>
+                <input type="checkbox" id="ride2" name="ride2" value="plat">
+                <label for="ride2"> Viewing Platform </label><br>
+                <input type="checkbox" id="ride3" name="ride3" value="dome">
+                <label for="ride3"> Dino Dome </label><br>
+                <input type="checkbox" id="ride4" name="ride4" value="safari">
+                <label for="ride4"> Balloon Adventure </label><br>
+                <input type="checkbox" id="ride5" name="ride5" value="gyro">
+                <label for="ride5"> Gyrosphere </label><br>
+
+            <label for="instr"> Special Instructions </label><br>
+            <textarea id="instr" name="instructions"> If you have any special instructions, enter them here </textarea><br>
+
+            <input type="submit" id="submit" value="Book Vacation">
+
+        </form>
+        
+    </body>
+
+    <script src = "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+
+</html>
